@@ -1,0 +1,107 @@
+/* --------- Default Elements --------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #fff;
+    font-family: montserrat, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/hero-image.png); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* --------- Navigation --------- */
+
+.navbar {
+    margin: auto;
+    width: 100%;
+}
+
+.navbar ul {
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.navbar ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    letter-spacing: 3px;
+    word-spacing: 1.5px;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.hero-text h1,
+.hero-text p {
+    font-weight: 400;
+}
+
+.brief {
+    font-size: 18px;
+    font-weight: 200 !important;
+    width: 500px;
+    padding-top: 15px;
+}
+
+/* --------- Icons --------- */
+
+.social-icon-p {
+    font-size: 15px;
+    font-weight: 300 !important;
+}
+
+.github,
+.linkedin,
+.resume {
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: 15px 5px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.down-arrow {
+    padding-top: 30px;
+    height: 100px;
+    
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 30px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
