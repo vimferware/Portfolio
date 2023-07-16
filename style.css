@@ -1,3 +1,5 @@
+/*-- blue: #10334a --*/
+
 /* --------- Default Elements --------- */
 * {
     padding: 0;
@@ -8,14 +10,13 @@
 html {
     color: #fff;
     font-family: montserrat, Helvetica, sans-serif;
-    font-weight: 300;
     font-size: 20px;
     text-align: center;
     letter-spacing: 1px;
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/hero-image.png); 
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -36,14 +37,29 @@ body {
 
 .navbar ul li {
     display: inline-block;
-    margin: 15px;
+    margin: 25px;
     font-size: 25px;
 }
 
-.navbar ul li a {
+.navbar ul li a:link,
+.navbar ul li a:visited {
     list-style: none;
     text-decoration: none;
     color: #fff;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:active {
+    color: #0c4d6c;
+    border: 1px solid #0c4d6c;
+    border-radius: 5px;
+    margin: -6px;
+    padding: 5px;
+}
+
+.social-icons a:hover,
+.social-icons a:active {
+    color: #0c4d6c;
 }
 
 .hero-text {
@@ -65,7 +81,6 @@ body {
 
 .brief {
     font-size: 18px;
-    font-weight: 200 !important;
     width: 500px;
     padding-top: 15px;
 }
@@ -74,7 +89,6 @@ body {
 
 .social-icon-p {
     font-size: 15px;
-    font-weight: 300 !important;
 }
 
 .github,
@@ -102,6 +116,14 @@ body {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 30px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow:hover,
+.arrow:active {
+    border: solid #0c4d6c;
+    border-width: 0 3px 3px 0;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
