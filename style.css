@@ -10,48 +10,73 @@
     box-sizing: border-box;
 }
 
-html {
-    color: #fff;
+html,
+body {
+    height: 100%;
     font-family: montserrat, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 1px;
-    word-spacing: 0.5px;
 }
 
-/*---------------------------------------------------*/
-/* LAYOUT */
-/*---------------------------------------------------*/
+a {
+    text-decoration: none;
+}
 
 .container {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png); 
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.container > div {
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    left: 0;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.section-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    width: inherit;
+    height: inherit;
 }
 
 /*---------------------------------------------------*/
-/* HOME */
+/* HOME font color is white and
+ text align center if needed in html setting
+ font size: 18px */
 /*---------------------------------------------------*/
 
+/* ------------ NAVBAR ------------ */
 
-.home {
-    height: auto;
-    top: 0;
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+
 }
+
+.navbar li {
+    padding: 20px;
+}
+
+/* ------------ NAVBAR END ------------ */
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.home-content {
+    flex: 1;
+}
+
+
+/* ------------ SOCIAL ICONS ------------ */
+/* ------------ SOCIAL ICONS END ------------ */
+
+
+
+
+/* 
 
 .hero-text {
     margin-top: 20px;
@@ -77,19 +102,6 @@ html {
 
 }
 
-/* ---------------------- NAVBAR ------------------------ */
-
-.navbar {
-    margin: auto;
-    width: 100%;
-}
-
-.navbar ul {
-    text-align: center;
-    list-style: none;
-    justify-content: center;
-}
-
 .navbar ul li {
     display: inline-block;
     margin: 25px;
@@ -112,8 +124,7 @@ html {
     padding: 5px;
 }
 
-/* ---------------------- ICONS ------------------------ */
-
+PROJECTS
 .github,
 .linkedin,
 .resume {
@@ -137,10 +148,9 @@ html {
 
 .social-icon-p {
     font-size: 15px;
-}
-
+} 
 .down-arrow {
-    padding-top: 30px;
+    
     height: 100px;
     
 }
@@ -163,28 +173,14 @@ html {
     -webkit-transform: rotate(45deg);
 }
 
-/*---------------------------------------------------*/
-/* PROJECTS */
-/*---------------------------------------------------*/
-
-.div2 {
-    background-color: blue;
-    top: 100%; 
+.body {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+*/
 
-div.projects {
-    margin: auto;
-    height: 33.33%;
-    width: 70%;
-    border: 1px solid green;
-    background-color: grey;
-}
 
-/*---------------------------------------------------*/
-/* CONTACT */
-/*---------------------------------------------------*/
 
-.div3 {
-    background-color: green;
-    top: 110%; 
-}
+
