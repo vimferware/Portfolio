@@ -1,8 +1,8 @@
-/*-- blue: #10334a --*/
+/*-- blue color: #0c4d6c --*/
 
-/*---------------------------------------------------*/
+/* --------------------------------------------------- */
 /* REUSABLE COMPONENTS */
-/*---------------------------------------------------*/
+/* --------------------------------------------------- */
 
 * {
     padding: 0;
@@ -12,12 +12,15 @@
 
 html,
 body {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
     height: 100%;
     font-family: montserrat, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -36,11 +39,9 @@ a {
     height: inherit;
 }
 
-/*---------------------------------------------------*/
-/* HOME font color is white and
- text align center if needed in html setting
- font size: 18px */
-/*---------------------------------------------------*/
+/* --------------------------------------------------- */
+/* HOME */
+/* --------------------------------------------------- */
 
 /* ------------ NAVBAR ------------ */
 
@@ -49,11 +50,28 @@ a {
     justify-content: center;
     list-style: none;
     text-decoration: none;
-
+    margin-top: 20px;
 }
 
 .navbar li {
-    padding: 20px;
+    margin: 0 20px;
+}
+
+.navbar li a:link,
+.navbar li a:visited {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 110%;
+
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    color: #0c4d6c;
+    border: 1px solid #0c4d6c;
+    border-radius: 5px;
 }
 
 /* ------------ NAVBAR END ------------ */
@@ -65,101 +83,63 @@ a {
     width: 50%;
 }
 
+.home-section h1 {
+    font-size: 500%;
+    margin-top: 10px;
+}
+
+.home-section h1,
+.home-section h2 {
+    font-weight: 400;
+}
+
 .home-content {
     flex: 1;
 }
 
-
-/* ------------ SOCIAL ICONS ------------ */
-/* ------------ SOCIAL ICONS END ------------ */
-
-
-
-
-/* 
-
-.hero-text {
-    margin-top: 20px;
-    padding-top: 10px;
-    font-size: 250%;
-}
-
-.hero-text h1,
-.hero-text h2 {
-    font-weight: 300;
-}
-
-.hero-text > h2 {
-    font-size: 30px;
-    padding-bottom: 50px;
-}
-
 .intro-text {
-    font-weight: 300;
-    margin: auto;
-    font-size: 18px;
-    width: 600px;
-
+    margin-bottom: 50px;
 }
 
-.navbar ul li {
-    display: inline-block;
-    margin: 25px;
-    font-size: 25px;
+/* ------------ ICONS ------------ */
+
+.media-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
-.navbar ul li a:link,
-.navbar ul li a:visited {
-    list-style: none;
+.media-icon-container a {
     text-decoration: none;
     color: #fff;
+    margin: 0 15px;
 }
 
-.navbar ul li a:hover,
-.navbar ul li a:active {
+.icon {
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+.icon:hover,
+.icon:active {
     color: #0c4d6c;
     border: 1px solid #0c4d6c;
     border-radius: 5px;
-    margin: -6px;
-    padding: 5px;
 }
 
-PROJECTS
-.github,
-.linkedin,
-.resume {
-    display: inline-block;
-    font-size: 30px;
-    letter-spacing: 1px;
-    margin: 15px 5px;
-    padding: 15px 5px;
-    font-weight: 300;
+.icon-name {
+    font-size: 18px;
+    padding-top: 10px;
 }
 
-.social-icons a {
-    color: white;
-    text-decoration: none;
-}
-
-.social-icons a:hover,
-.social-icons a:active {
-    color: #0c4d6c;
-}
-
-.social-icon-p {
-    font-size: 15px;
-} 
 .down-arrow {
-    
-    height: 100px;
-    
+    padding-bottom: 15px;
 }
 
 .arrow {
-    border: solid white;
+    border: solid #fff;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    margin-top: 125px;
     padding: 30px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -173,13 +153,7 @@ PROJECTS
     -webkit-transform: rotate(45deg);
 }
 
-.body {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-*/
+/* ------------ ICONS END ------------ */
 
 
 
