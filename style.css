@@ -1,7 +1,5 @@
-/*-- blue color: #0c4d6c --*/
-
 /* --------------------------------------------------- */
-/* REUSABLE COMPONENTS */
+/* LAYOUT */
 /* --------------------------------------------------- */
 
 * {
@@ -17,7 +15,8 @@ body {
     color: #fff;
     height: 100%;
     font-family: montserrat, Helvetica, sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png); 
+    background-color: black;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,6 +30,7 @@ body {
 }
   
 .section-container {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -153,8 +153,70 @@ body {
     -webkit-transform: rotate(45deg);
 }
 
-/* ------------ ICONS END ------------ */
+/* --------------------------------------------------- */
+/* PROJECTS */
+/* --------------------------------------------------- */
+  
+.project {
+    display: flex;
+    width: 60%;
+    height: 50%;
+    font-size: 75%;
+    margin-bottom: 50px;
+}
+  
+.box {
+    display: flex;
+    flex: 1;
+}
 
+.left {
+    justify-content: center;
+    align-items: center;
+}
 
+.project .left img {
+    width: 100%;
+    height: 100%;
+}
 
+.right {
+    flex-direction: column;
+}
 
+.data {
+    margin-bottom: 15px;
+}
+
+.about {
+    flex: 3;
+}
+
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: repeat(2, 1fr);  
+    grid-gap: 10px;
+    justify-content: center;
+}
+  
+.tech {
+    font-size: 70%;
+    border: 2px solid #0c4d6c;
+    padding: 5px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;               
+    text-decoration: none; 
+    margin-right: 20px;     
+    padding: 8px 10px;
+    background-color: #0c4d6c; 
+    border: 1px solid #0c4d6c;
+    border-radius: 5px;  
+}
+
+/* --------------------------------------------------- */
+/* CONTACT FORM */
+/* --------------------------------------------------- */
