@@ -15,8 +15,7 @@ body {
     color: #fff;
     height: 100%;
     font-family: montserrat, Helvetica, sans-serif;
-    background-color: black;
-    /*background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image); */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,6 +36,7 @@ body {
     text-align: center;
     width: inherit;
     height: inherit;
+    margin-bottom: 50px;
 }
 
 /* --------------------------------------------------- */
@@ -173,6 +173,7 @@ body {
 .left {
     justify-content: center;
     align-items: center;
+    margin-right: 100px;
 }
 
 .project .left img {
@@ -220,3 +221,43 @@ body {
 /* --------------------------------------------------- */
 /* CONTACT FORM */
 /* --------------------------------------------------- */
+  
+.contact-form-container {
+    background-color: lightskyblue;
+    width: 500px;
+    height: 400px;
+}
+
+.contact-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 420%);
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
