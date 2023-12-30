@@ -15,7 +15,7 @@ body {
     color: #fff;
     height: 100%;
     font-family: montserrat, Helvetica, sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
