@@ -18,6 +18,8 @@ body {
 .wrapper {
     border: 2px solid black;
     background-color: white;
+    max-width: 850px;
+    min-width: 350px;
 }
 
 h1, 
@@ -39,7 +41,7 @@ p {
 
 .section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .section-courses {
@@ -47,9 +49,10 @@ p {
 }
 
 .left {
-    margin-right: 200px;
+    margin-left: 35px;
 }
 
 .right {
     margin-top: 35px;
+    margin-right: 35px;
 }
