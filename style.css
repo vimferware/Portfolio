@@ -45,15 +45,18 @@ a:link,
 a:visited {
     color: #fff;
     font-size: 25px;
+    padding: 2px 5px;
+    border: 1px solid transparent;
+    border-radius: 9px;
     text-decoration: none;
-    border-bottom: 3px solid transparent;
-    border-radius: 3px;
-    transition: border-bottom 0.4s;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 a:hover,
 a:active {
-    border-bottom: 3px solid #0c4d6c;
+    color: #fff;
+    background-color: #0f39b8;
+    box-shadow: 0 0 10px 5px #0f39b8;
 }
 
 
