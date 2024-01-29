@@ -10,80 +10,62 @@
 
 html,
 body {
+    background-color: black;
     font-size: 20px;
-    font-weight: 300;
-    color: black;
-    font-family: montserrat, Helvetica, sans-serif;
-    /*background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png);*/
+    font-family: 'Gowun Batang', Helvetica, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/hero-image.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.wrapper {
-    position: relative;
-}
-
-.container {
+#wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: scroll;
+    flex-flow: row wrap;
+    text-align: center;
 }
 
-.navbar {
-    background-color: green;
+#wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
 }
 
 /* --------------------------------------------------- */
 /* HOME */
-
-/* -----------------
-.navbar {
-    height: 100px;
-    width: 600px;
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    text-decoration: none;
-    margin: 20px 0;
-}
+/* --------------------------------------------------- */
 
 .navbar li {
-    margin: 0 20px;
+    display: inline-block;
+    margin: 15px 25px;
 }
 
-.navbar li a:link,
-.navbar li a:visited {
+a:link,
+a:visited {
     color: #fff;
+    font-size: 25px;
     text-decoration: none;
-    padding: 5px;
-    font-size: 110%;
-
+    border-bottom: 3px solid transparent;
+    border-radius: 3px;
+    transition: border-bottom 0.4s;
 }
 
-.navbar li a:hover,
-.navbar li a:active {
+a:hover,
+a:active {
     border-bottom: 3px solid #0c4d6c;
-}---------------------------------- */
-
-
-/* ------------ NAVBAR ------------ */
+}
 
 
 
-/* ------------ NAVBAR END ------------ */
+
+
+
 
 h1.home-text {
     height: 100px;
     width: 600px;
-    background-color: blue;
+    background-color: lightblue;
 }
 
 
