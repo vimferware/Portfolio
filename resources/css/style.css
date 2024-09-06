@@ -64,7 +64,7 @@ header {
     background-position: center;
     height: 100vh;
     text-align: center;
-    color: #fff;
+    
 }
 
 .hero-text-box {
@@ -82,15 +82,35 @@ header {
     margin-right: 40px;
 }
 
-.main-nav li a,
-.social-icons li a {
+.main-nav li a:link,
+.main-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
     text-decoration: none;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #0c4d6c;
+}
+
+.main-nav {
+    margin-top: 30px;
 }
 
 .hero-text-box {
     width: 1140px;
+    color: #fff;
 }
-
 
 
 
