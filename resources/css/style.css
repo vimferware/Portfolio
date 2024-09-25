@@ -182,6 +182,74 @@ header {
 }
 
 /*-----------------------------------------------*/
+/* SKILLS */
+/*-----------------------------------------------*/
+
+.skills {
+    width: 1140px;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 30px;
+    font-size: 90px;
+}
+
+.skills img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+/* -------- SKILL PALETTE AND CUSTOMIZATION -------- */
+
+#html {
+    color: #FF5733;
+}
+
+#css {
+    color: #1572B6;
+}
+
+#javascript {
+    color: #F7DF1E;
+}
+
+#sass {
+    color: #c69;
+}
+
+#npm {
+    color: #cb3837;
+}
+
+#react {
+    color: #61dafb;
+}
+
+#bootstrap {
+    background-color: #563d7c;
+}
+
+#webpack {
+    background-color: #8DD3C7;
+}
+
+#jquery {
+    background-color:  #0769AD;
+}
+
+#github {
+    background-color: #0366D6;
+}
+
+#redux {
+    background-color: #764ABC;
+}
+
+/*-----------------------------------------------*/
 /* PROJECTS */
 /*-----------------------------------------------*/
 
@@ -216,3 +284,4 @@ header {
 /* --------------------------------------------------- */
 /* CONTACT FORM */
 /* --------------------------------------------------- */
+
